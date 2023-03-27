@@ -459,6 +459,20 @@
               </li>
             </ul>
           </li>
+          <li>
+            <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
+            <form name="signup_form" autocomplete="on" novalidate>
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="formula"
+                />
+              </label>
+              <button type="button" class="button_footer">Zapisz się</button>
+            </form>
+          </li>
         </ul>
       </section>
     </footer>
@@ -466,6 +480,76 @@
     <box class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close_btn" data-modal-close>X</button>
+        <form name="signup_form" autocomplete="on" novalidate>
+          <label>
+            <h2>Zostaw swoje dane w formularzu poniżej</h2>
+            <ul class="list_window">
+              <li>
+                <ul class="labels_window">
+                  <li>
+                    Imie
+                    <input
+                      type="imie"
+                      name="imie"
+                      placeholder="E-mail"
+                      class="formula_window"
+                      required
+                    />
+                  </li>
+                  <li>
+                    Telefon
+                    <input
+                      type="telefon"
+                      name="telefon"
+                      placeholder="E-mail"
+                      class="formula_window"
+                      required
+                    />
+                  </li>
+                  <li>
+                    Email
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      class="formula_window"
+                      required
+                    />
+                  </li>
+                  <li>
+                    Komentarz
+                    <input
+                      type="komentarz"
+                      name="komentarz"
+                      placeholder="E-mail"
+                      class="formula_window"
+                      required
+                    />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="form-field">
+                  <input
+                    type="checkbox"
+                    class="form-input"
+                    name="statement"
+                    value="declaration"
+                    id="declaration"
+                  />
+                  <label class="form-label" for="declaration"
+                    >Oświadczam iż akceptuję
+                    <a href="/Regulamin">Regulamin</a> i
+                    <a href="/Regulamin">Politykę Prywatności</a>.</label
+                  >
+                </div>
+              </li>
+              <li>
+                <button type="button" class="window_button">Wyślij</button>
+              </li>
+            </ul>
+          </label>
+        </form>
       </div>
     </box>
 
