@@ -708,12 +708,23 @@ p{
 }
 
 .button_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--button-color);
     color: #fff;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 0;
+    fill: #fff;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.container_social form{
+    margin-top: 20px;
 }
 
 .formula{
@@ -721,9 +732,9 @@ p{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
-    width: 350px;
+    width: 250px;
     height: 50px;
-    color: #fff
+    color: #fff;
 }
 
 .formula_window{
@@ -751,10 +762,17 @@ p{
 .labels_window li{
     list-style-type: none;
     padding: 10px;
+    
+}
+.labels_window input{
+    padding-left: 42px;
 }
 
-
-
+.container_social .button_footer{
+    padding: 0;
+    margin-left: 12px;
+}
+/*
 .formula_window:placeholder-shown{
     border-color: rgba(33, 33, 33, 0.2);
 }
@@ -762,7 +780,7 @@ p{
 .formula_window:not(:placeholder-shown) {
     border-color: var(--button-color);
 }
-
+*/
 .modal h2{
     display: flex;
     justify-content: center;
@@ -771,7 +789,8 @@ p{
 }
 
 .window_button{
-    margin-top: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -800,6 +819,36 @@ p{
     cursor: pointer;
 }
 
-input[type="checkbox" i]{
-    color: var(--button-color);
+.from_label{
+    color: var(--link-clolor);
 }
+
+.footer_email_button{
+    display: flex;
+    justify-content: center;
+}
+
+.svg_box{
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+
+.modal_list{
+    position: relative;
+    /*border-color: rgba(33, 33, 33, 0.2);*/
+}
+
+ input:focus-within,
+ input:focus-within+svg {
+    fill: var(--button-color);
+    border-color: var(--button-color);
+ }
+
+ .formula_window_textarea{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    outline: none;
+ }

@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="portfolio.html" />
-    <title>Document_5</title>
+    <title>Document_6</title>
   </head>
   <body>
     <header>
@@ -461,7 +461,12 @@
           </li>
           <li>
             <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
-            <form name="signup_form" autocomplete="on" novalidate>
+            <form
+              name="signup_form"
+              autocomplete="on"
+              novalidate
+              class="footer_email_button"
+            >
               <label>
                 <input
                   type="email"
@@ -470,7 +475,12 @@
                   class="formula"
                 />
               </label>
-              <button type="button" class="button_footer">Zapisz się</button>
+              <button type="button" class="button_footer">
+                Zapisz się
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </form>
           </li>
         </ul>
@@ -481,74 +491,92 @@
       <div class="modal">
         <button type="button" class="close_btn" data-modal-close>X</button>
         <form name="signup_form" autocomplete="on" novalidate>
-          <label>
-            <h2>Zostaw swoje dane w formularzu poniżej</h2>
-            <ul class="list_window">
-              <li>
-                <ul class="labels_window">
-                  <li>
-                    Imie
+          <h2>Zostaw swoje dane w formularzu poniżej</h2>
+          <ul class="list_window">
+            <li>
+              <ul class="labels_window">
+                <li class="modal_list">
+                  <label>
+                    <span>Imie</span>
+
                     <input
-                      type="imie"
+                      type="text"
                       name="imie"
-                      placeholder="E-mail"
+                      placeholder=" "
                       class="formula_window"
                       required
                     />
-                  </li>
-                  <li>
-                    Telefon
+                    <svg class="svg_box" width="12" height="12">
+                      <use href="./images/icons.svg#icon-Vector-22"></use>
+                    </svg>
+                  </label>
+                </li>
+
+                <li class="modal_list">
+                  <label>
+                    <span>Telefon</span>
+
                     <input
-                      type="telefon"
+                      type="text"
                       name="telefon"
-                      placeholder="E-mail"
+                      placeholder=" "
                       class="formula_window"
                       required
                     />
-                  </li>
-                  <li>
-                    Email
+                    <svg class="svg_box" width="12" height="12">
+                      <use href="./images/icons.svg#icon-Vector0"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="modal_list">
+                  <label>
+                    <span>Email</span>
+
                     <input
-                      type="email"
+                      type="text"
                       name="email"
-                      placeholder="E-mail"
+                      placeholder=" "
                       class="formula_window"
                       required
                     />
-                  </li>
-                  <li>
-                    Komentarz
-                    <input
-                      type="komentarz"
-                      name="komentarz"
-                      placeholder="E-mail"
-                      class="formula_window"
-                      required
-                    />
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <div class="form-field">
-                  <input
-                    type="checkbox"
-                    class="form-input"
-                    name="statement"
-                    value="declaration"
-                    id="declaration"
-                  />
-                  <label class="form-label" for="declaration"
-                    >Oświadczam iż akceptuję
-                    <a href="/Regulamin">Regulamin</a> i
-                    <a href="/Regulamin">Politykę Prywatności</a>.</label
-                  >
-                </div>
-              </li>
-              <li>
-                <button type="button" class="window_button">Wyślij</button>
-              </li>
-            </ul>
-          </label>
+                    <svg class="svg_box" width="12" height="12">
+                      <use href="./images/icons.svg#icon-Vector-11"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="modal_list">
+                  <label>
+                    <span> Komentarz</span>
+                    <textarea
+                      name="feedback"
+                      rows="8"
+                      placeholder="Wprowadź tekst"
+                      style="resize: none"
+                      class="formula_window_textarea"
+                    ></textarea>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="form-field">
+                <input
+                  type="checkbox"
+                  class="form-input"
+                  name="statement"
+                  value="declaration"
+                  id="declaration"
+                />
+                <label class="form-label" for="declaration"
+                  >Oświadczam iż akceptuję <a href="/Regulamin">Regulamin</a> i
+                  <a href="/Regulamin">Politykę Prywatności</a>.</label
+                >
+              </div>
+            </li>
+            <li>
+              <button type="button" class="window_button">Wyślij</button>
+            </li>
+          </ul>
         </form>
       </div>
     </box>
