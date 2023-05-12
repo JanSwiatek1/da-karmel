@@ -418,7 +418,7 @@
     <footer class="footer">
       <section class="container">
         <ul class="container_social">
-          <li>
+          <li class="footer_list_positioner_logo">
             <a href="/" class="logo"><span class="blue">Web</span>Studio</a>
 
             <address class="footer_adress">
@@ -459,7 +459,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="footer_list_positioner">
             <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
             <form
               name="signup_form"
@@ -497,7 +497,7 @@
               <ul class="labels_window">
                 <li class="modal_list">
                   <label>
-                    <span>Imie</span>
+                    <span class="label_title">Imie</span>
 
                     <input
                       type="text"
@@ -514,7 +514,7 @@
 
                 <li class="modal_list">
                   <label>
-                    <span>Telefon</span>
+                    <span class="label_title">Telefon</span>
 
                     <input
                       type="text"
@@ -530,7 +530,7 @@
                 </li>
                 <li class="modal_list">
                   <label>
-                    <span>Email</span>
+                    <span class="label_title">Email</span>
 
                     <input
                       type="text"
@@ -546,7 +546,7 @@
                 </li>
                 <li class="modal_list">
                   <label>
-                    <span> Komentarz</span>
+                    <span class="label_title"> Komentarz</span>
                     <textarea
                       name="feedback"
                       rows="8"
@@ -568,13 +568,15 @@
                   id="declaration"
                 />
                 <label class="form-label" for="declaration"
-                  >Oświadczam iż akceptuję <a href="/Regulamin">Regulamin</a> i
-                  <a href="/Regulamin">Politykę Prywatności</a>.</label
+                  >Oświadczam iż akceptuję
+                  <a href="/Regulamin" class="blue">Regulamin</a> i
+                  <a href="/Regulamin" class="blue">Politykę Prywatności</a
+                  >.</label
                 >
               </div>
             </li>
             <li>
-              <button type="button" class="window_button">Wyślij</button>
+              <button type="submit" class="window_button">Wyślij</button>
             </li>
           </ul>
         </form>

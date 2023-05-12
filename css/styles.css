@@ -580,9 +580,10 @@ p{
 .container_social{
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
-    gap:70px;
+    gap:60px;
     list-style-type: none;
 }
 
@@ -732,9 +733,10 @@ p{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
-    width: 250px;
+    width: 358px;
     height: 50px;
     color: #fff;
+    padding-left: 16px;
 }
 
 .formula_window{
@@ -743,7 +745,13 @@ p{
     width: 448px;
     height: 40px;
     outline: none;
+    margin-top: 4px;
 }
+
+/* .formula_window:hover{
+    fill: var(--button-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .list_window{
     display: flex;
@@ -772,15 +780,7 @@ p{
     padding: 0;
     margin-left: 12px;
 }
-/*
-.formula_window:placeholder-shown{
-    border-color: rgba(33, 33, 33, 0.2);
-}
 
-.formula_window:not(:placeholder-shown) {
-    border-color: var(--button-color);
-}
-*/
 .modal h2{
     display: flex;
     justify-content: center;
@@ -819,9 +819,9 @@ p{
     cursor: pointer;
 }
 
-.from_label{
+/* .from_label{
     color: var(--link-clolor);
-}
+} */
 
 .footer_email_button{
     display: flex;
@@ -851,4 +851,34 @@ p{
     width: 448px;
     height: 120px;
     outline: none;
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    padding-left: 16px;
+    padding-top: 12px;
+    margin-top: 4px;
+ }
+
+ .formula_window_textarea:hover{
+    fill:var(--button-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+ }
+
+.label_title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+ }
+
+ .footer_list_positioner{
+    padding-top: 56px;
+ }
+
+ .footer_list_positioner_logo {
+    padding-top: 90px;
  }
