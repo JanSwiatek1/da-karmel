@@ -748,10 +748,6 @@ p{
     margin-top: 4px;
 }
 
-/* .formula_window:hover{
-    fill: var(--button-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .list_window{
     display: flex;
@@ -840,9 +836,12 @@ p{
 }
 
  input:focus-within,
- input:focus-within+svg {
+ input:focus-within+svg,
+ input:hover,
+ input:hover+svg {
     fill: var(--button-color);
     border-color: var(--button-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .formula_window_textarea{
@@ -861,7 +860,7 @@ p{
  }
 
  .formula_window_textarea:hover{
-    fill:var(--button-color);
+    border-color:var(--button-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
  }
