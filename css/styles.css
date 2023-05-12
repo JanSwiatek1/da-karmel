@@ -867,12 +867,12 @@ p{
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  } */
 
-textarea:focus-within,
-textarea:hover, {
-      fill: var(--button-color);
-      border-color: var(--button-color);
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.modal_list textarea:focus-within
+.modal_list textarea:hover {
+    fill: var(--button-color);
+    border-color: var(--button-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .label_title{
     font-family: 'Roboto';
