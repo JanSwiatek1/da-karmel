@@ -1,0 +1,44 @@
+.logo_text {
+    text-decoration: none;
+    color: $karmel-color1;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+
+    &-black{
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    }
+    &-white {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &-top {
+        width: 55px;
+        height: 90px;
+    }
+}
+
+// .logo-down {
+//     display: flex;
+//     justify-content: center;
+
+//     @include desktop {
+//         justify-content: flex-start;
+//     }
+// }

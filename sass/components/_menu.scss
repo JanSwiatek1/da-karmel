@@ -1,0 +1,107 @@
+.DA_list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 100px;
+}
+
+.DA_box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: (#ffefd5a5);
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+    transition-duration: 1500ms;
+
+    &:hover {
+        transform: scale(1.25);
+        /* animation: animate30 3000ms infinite 1000ms; */
+    }
+}
+
+
+
+.PDA_box {
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(136, 149, 233, 0.846);
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+    transition-duration: 1500ms;
+    text-decoration: none;
+    
+    &:hover {
+        transform: scale(1.25);
+    }
+}
+
+
+.section_button-menu {
+    background-image: url("../images/nature-3.jpg");
+    display: flex;
+    // height: 600px;
+    height: 1200px;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #2F303A;
+    justify-content: center;
+    align-items: center;
+    // background-repeat: repeat-y;
+
+
+
+        background-position: center center;
+        background-size: cover;
+
+        // height: 600px;
+        // margin-left: 0;
+        // margin-top: 0;
+        // justify-content: center;
+        // align-items: center;
+}
+.headline {
+    
+    /* display: flex; */
+    text-decoration: none;
+
+    &_h2 {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &_h1{
+        color: $background-color;
+        font-size: 50px;
+        
+    }
+
+    &_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    // width: 1000px;
+
+    
+    }
+}
+
+.logo-main {
+    height: 190px;
+    width: 120px;
+}
+

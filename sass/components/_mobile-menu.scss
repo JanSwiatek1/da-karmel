@@ -1,0 +1,106 @@
+.menu__container.is-open{
+    transform: translateX(0);
+}
+
+.menu__container{
+    background-color: #fff;
+    position: fixed;
+    inset:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 250ms ease;
+    padding-left: 40px;
+    padding-right: auto;
+
+
+    &__close-bth{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &focus{
+            fill: $button-color;
+        }
+    }
+
+
+    &__mobile__contact{
+        display: flex;
+        margin-bottom: 64px;
+        flex-direction: column;
+        gap:32px;
+        // &-item{
+
+        // }
+        &__mail{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: $link-color;
+            text-decoration: none;
+        }
+        &__tel{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: $button-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.mobile__menu{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    gap:36px;
+    padding-top: 48px;
+
+    &-link{
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover,
+        &:focus{
+            color: $button-color;
+        }
+    }
+
+
+}
+
+.mobile__socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 48px;
+    flex-wrap: wrap;
+    
+    &-link{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $button-color;
+        border-right: 2px solid rgba(33, 33, 33, 0.2); 
+        transform: rotate(90deg);
+        padding-right: 10px;
+
+    }
+    &-linkedin{
+        @extend .mobile__socials-link;
+        border:none;
+    }
+}

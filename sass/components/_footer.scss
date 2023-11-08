@@ -1,0 +1,226 @@
+.footer {
+
+    display: flex;
+    background-color: $background-color3;
+    color: $link-color;
+    padding-bottom: 60px;
+    // height: 252px;
+    justify-content: space-between;
+    align-items: center;
+
+    .link{
+        color: $link-color;
+        font-size: 14px;
+        line-height: 2.4;
+
+        
+    }
+
+    &__email__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+        width: auto;
+
+        @include desktop{
+            flex-direction: row;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $button-color;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+        padding: 0;
+        fill: #fff;
+        gap: 25px;
+        cursor: pointer;
+
+        @include desktop{
+            margin-left: 12px;
+        }
+        
+  
+    }
+
+    &__adress {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop{
+            align-items:flex-start
+        }
+            
+        &-headline{
+            color: #FFFFFF;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+
+        
+
+        
+        &-info {
+            // font-size: 14px;
+            line-height: 2;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            // margin-top: 20px;
+            padding-top: 9px;
+        }
+        
+    }
+    &__list__positioner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include desktop{
+            align-items: flex-start;
+        }
+
+        &-logo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+}
+
+.container__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 60px;
+    list-style-type: none;
+    padding-top: 60px;
+
+
+    @include tablet{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        // padding-top: 60px;
+    }
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        // padding-top: 60px;
+    }
+
+
+    &-info {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        color: #FFFFFF;
+
+        @include desktop{
+            justify-content: flex-start;
+        }
+    }
+
+}
+
+
+.link-fot {
+    // font-size: 14px;
+    // line-height: 2;
+    font-style: normal;
+    // font-weight: 400;
+    // line-height: 24px;
+    letter-spacing: 0.03em;
+    padding-top: 9px;
+    text-decoration: none;
+    color: $link-color;
+
+    &-first {
+        padding-top: 0;
+        margin-top: 20px;
+        text-decoration: none;
+        color: $link-color;
+        font-style: normal;
+        letter-spacing: 0.03em;
+
+        &:focus,
+        &:hover {
+            cursor: pointer;
+            color: $karmel-color1;
+        }
+    }
+
+}
+
+
+.footer__socialmedia {
+     display: flex;
+     justify-content: space-between;
+     padding: 0;
+     list-style-type: none;
+     gap: 10px;
+    padding-bottom: 40px;
+ 
+
+    &__foto {
+        padding: 12px;
+        fill: $link-color;
+    }
+
+    &__li-part {
+        height: 1px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 60px;
+        height: 45px;
+        border-radius: 90%;
+        background-color: rgba(255, 255, 255, 0.1);
+        &:focus,
+        &:hover {
+            border-radius: 100%;
+            cursor: pointer;
+            background-color: $karmel-color1;
+            height: 45px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+ 
+}
+
+
+
+
+
+
+

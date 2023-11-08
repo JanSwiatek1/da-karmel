@@ -1,0 +1,56 @@
+.travels{
+    &-list{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_part{
+
+        &-name{
+            // background-image: url("/images/img-k3.jpg");
+            position: relative;
+            height: 294px;
+            width: 370px;
+            overflow: hidden;
+            background-color: #fff;
+            background-position: center center;
+            background-size: cover;
+
+            transition-property: background-color, transform;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+
+            &:hover{
+                transform: scale(110%);
+                // transform:translate(110%);
+            }
+        }
+
+        &-text{
+            position:relative;
+            color: #fff;
+
+            
+        }
+        &-box{
+            overflow: hidden;
+            border: 5px solid black;
+            border-radius: 3%;
+        }
+        &-textbox{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
