@@ -2,9 +2,12 @@
   "name": "da-karmel",
   "version": "1.0.0",
   "main": "server.js",
+  "homepage": "https://JanSwiatek1.github.io/da-karmel",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "parcel build src/*.html --public-url /da-karmel/"
   },
   "keywords": [],
   "author": "",
