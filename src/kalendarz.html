@@ -28,6 +28,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="portfolio.html" /> -->
+    <link rel="stylesheet" href="./css/cal.css" />
     <title>AKADEMICKIE</title>
   </head>
   <body>
@@ -68,34 +69,17 @@
       </div>
     </header>
     <main>
-      <section class="calendar_box">
-        <div class="calendar-container">
-          <header class="calendar-header">
-            <p class="calendar-current-date"></p>
-            <div class="calendar-navigation">
-              <span id="calendar-prev" class="material-symbols-rounded">
-                chevron_left
-              </span>
-              <span id="calendar-next" class="material-symbols-rounded">
-                chevron_right
-              </span>
-            </div>
-          </header>
-
-          <div class="calendar-body">
-            <ul class="calendar-weekdays">
-              <li>Ndz</li>
-              <li>Pon</li>
-              <li>Wt</li>
-              <li>Śr</li>
-              <li>Czw</li>
-              <li>Pt</li>
-              <li>Sob</li>
-            </ul>
-            <ul class="calendar-dates"></ul>
-          </div>
-        </div>
-      </section>
+      <div class="bor">
+        <iframe
+          class="cal"
+          src="https://calendar.google.com/calendar/embed?src=291f44c494ff382a4c1e57089ec8d3934a554dccdf15f7d46c32f3907a56be11%40group.calendar.google.com&ctz=Europe%2FWarsaw"
+          style="border: 0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
     </main>
     <footer class="footer">
       <section class="container">
@@ -173,6 +157,6 @@
         </ul>
       </section>
     </footer>
-    <script defer src="./js/calendar.js"></script>
+    <!-- <script defer src="./js/calendar.js"></script> -->
   </body>
 </html>

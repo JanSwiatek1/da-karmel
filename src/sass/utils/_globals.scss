@@ -1,6 +1,10 @@
 body{
     margin:0;
     height: auto;
+    font-family: 'Roboto', 'Verdana', sans-serif;
+    color: $text-color;
+    // display: flex;
+    // flex-direction: column;
 }
 ul {
     padding: 0;
@@ -13,6 +17,7 @@ p {
 li{
     list-style: none;
 }
+
 
 
 .link {
@@ -94,10 +99,7 @@ img{
     }
 }
 
-body {
-    font-family: 'Roboto', 'Verdana', sans-serif;
-    color: $text-color;
-}
+
 
 
 figcapition p {
