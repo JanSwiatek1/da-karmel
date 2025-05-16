@@ -109,4 +109,11 @@ function createGallery(trip, images) {
     updateGallery();
 }
 
-trips.forEach(fetchImages);
+async function bar() {
+    for (foo of trips) {
+        await fetchImages(foo)
+    }
+}
+bar();
+
+
