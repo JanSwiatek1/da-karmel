@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "server.js",
   "homepage": "https://JanSwiatek1.github.io/da-karmel",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -16,5 +15,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.1"
   }
 }
