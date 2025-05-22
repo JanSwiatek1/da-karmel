@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "parcel build src/*.html --public-url ./",
-    "dev": "parcel src/*.html"
-    
-    
+    "build": "./node_modules/.bin/parcel build src/*.html --public-url ./",
+    "dev": "parcel src/*.html",
+    "postinstall": "chmod -R +x node_modules/.bin" 
+
   },
   "keywords": [],
   "author": "",
