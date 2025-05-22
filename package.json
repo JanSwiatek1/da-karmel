@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "./node_modules/.bin/parcel build src/*.html --public-url ./",
-    "dev": "parcel src/*.html",
+    "build": "npx parcel build src/*.html --public-url ./",
     "postinstall": "chmod -R +x node_modules/.bin" 
 
   },
